@@ -105,3 +105,8 @@ on property:sys.tp.grip_enable=90
     write /proc/nvt_edge_reject_switch 3
 on property:sys.tp.grip_enable=270
     write /proc/nvt_edge_reject_switch 2
+
+on property:sys.boot_completed=1
+    # Restrict permissions to socket file
+    # to hide Magisk
+    chmod 440 /proc/net/unix
