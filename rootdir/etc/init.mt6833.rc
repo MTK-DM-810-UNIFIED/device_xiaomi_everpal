@@ -29,8 +29,8 @@ on property:ro.factory_mode=1 && property:sys.boot_completed=1
     chmod 0666 /dev/block/sdc9
 
 on post-fs-data
-    write /proc/sys/vm/dirty_background_ratio 5
-    write /proc/sys/vm/dirty_expire_centisecs 200
+    write /proc/sys/vm/dirty_background_ratio 10
+    write /proc/sys/vm/dirty_expire_centisecs 3000
 
     # Camera
     mkdir /mnt/vendor/persist/camera
