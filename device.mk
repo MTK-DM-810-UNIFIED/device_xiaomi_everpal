@@ -19,14 +19,6 @@ PRODUCT_PACKAGES += \
     FrameworksResOverlayEverpal \
     SystemUIOverlayEverpal
 
-# Properties
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/props/board_id/odm,$(TARGET_COPY_OUT_ODM)/etc/properties) \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/props/board_id/product,$(TARGET_COPY_OUT_PRODUCT)/etc/properties) \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/props/board_id/system,$(TARGET_COPY_OUT_SYSTEM)/etc/properties) \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/props/board_id/system_ext,$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/properties) \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/props/board_id/vendor,$(TARGET_COPY_OUT_VENDOR)/etc/properties)
-
 # Recovery
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/everpal/proprietary/vendor/firmware/novatek_ts_ct_fw.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_ts_ct_fw.bin \
