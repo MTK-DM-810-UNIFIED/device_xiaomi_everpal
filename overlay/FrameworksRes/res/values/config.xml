@@ -27,4 +27,6 @@
          -->
     <string name="config_mainBuiltInDisplayCutout">M 0,0 H -37 V 96 H 37 V 0 H 0 Z</string>
 
+    <!-- Flag indicating whether we should enable the adaptive sleep.-->
+    <bool name="config_adaptive_sleep_available">true</bool>
 </resources>
