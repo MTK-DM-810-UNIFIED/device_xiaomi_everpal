@@ -12,6 +12,7 @@ TARGET_OTA_ASSERT_DEVICE := evergo,evergreen,everpal,opal
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_everpal
 TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_everpal
+TARGET_INCLUDES_MIUI_CAMERA := true
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 134217728
