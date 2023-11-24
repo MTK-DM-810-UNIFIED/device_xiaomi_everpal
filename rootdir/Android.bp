@@ -17,3 +17,9 @@ prebuilt_etc {
     sub_dir: "init/hw",
     vendor: true,
 }
+
+sh_binary {
+    name: "init.goodix.events.sh",
+    src: "etc/init.goodix.events.sh",
+    vendor: true,
+}

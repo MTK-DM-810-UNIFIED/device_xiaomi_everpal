@@ -95,6 +95,13 @@ on boot
     # Thermal
     chown system system /sys/class/thermal/thermal_message/sconfig
 
+service vendor.goodix-events /vendor/bin/init.goodix.events.sh
+    class late_start
+    user root
+    group root system input
+    disabled
+    oneshot
+
 on property:sys.boot_completed=1
     write /sys/devices/system/cpu/cpufreq/policy0/scaling_governor "schedplus"
     write /sys/devices/system/cpu/cpufreq/policy4/scaling_governor "schedplus"
@@ -105,6 +112,8 @@ on property:sys.boot_completed=1
     write /dev/cpuset/background/cpus 4-5
     write /dev/cpuset/system-background/cpus 2-5
     write /dev/cpuset/restricted/cpus 2-5
+
+    start vendor.goodix-events
 
 # Touch
 on property:sys.tp.grip_enable=0

@@ -28,7 +28,8 @@ PRODUCT_COPY_FILES += \
 # Rootdir
 PRODUCT_PACKAGES += \
     init.batterysecret.rc \
-    init.mt6833.rc
+    init.mt6833.rc \
+    init.goodix.events.sh
 
 # Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \
