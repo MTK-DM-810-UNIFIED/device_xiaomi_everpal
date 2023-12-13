@@ -25,6 +25,6 @@
                 <string ...>M -5,0 L -5,10 L 5,10 L 5,0 Z @dp</string>
          @see https://www.w3.org/TR/SVG/paths.html#PathData
          -->
-    <string name="config_mainBuiltInDisplayCutout">M 0,0 H -37 V 99 H 37 V 0 H 0 Z</string>
+    <string name="config_mainBuiltInDisplayCutout">M 0,0 H -37 V 96 H 37 V 0 H 0 Z</string>
 
 </resources>
