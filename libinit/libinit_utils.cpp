@@ -21,13 +21,10 @@ void property_override(std::string prop, std::string value, bool add) {
 
 std::vector<std::string> ro_props_default_source_order = {
     "odm.",
-    "odm_dlkm.",
     "product.",
     "system.",
-    "system_dlkm.",
     "system_ext.",
     "vendor.",
-    "vendor_dlkm.",
     "",
 };
 
