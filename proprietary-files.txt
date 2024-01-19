@@ -772,8 +772,10 @@ vendor/lib64/egl/libMEOW_trace.so
 
 # IMS
 -vendor/bin/rcs_volte_stack
--vendor/bin/volte_rcs_ua
--vendor/lib/librcs_volte_core.so
+
+# IMS - from Redmi/light/light:14/UP1A.230905.011/V816.0.5.0.ULSCNXM:user/release-keys
+-vendor/bin/volte_rcs_ua|3eacfaed675e54765983da9603f2bcbe89711eb3
+-vendor/lib/librcs_volte_core.so|5f2f0ff0f12e2b3e1cf25f3b84b73708717d1a8c
 
 # Media
 -vendor/bin/vpud
