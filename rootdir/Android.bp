@@ -12,6 +12,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.batterysecret.rc",
+    src: "etc/init.batterysecret.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.modem.rc",
     src: "etc/init.modem.rc",
     sub_dir: "init/hw",
