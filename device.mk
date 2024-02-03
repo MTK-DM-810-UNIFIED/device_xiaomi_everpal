@@ -16,6 +16,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 # A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
+# Inherit Vendor GApps
+$(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
+
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl \
     android.hardware.boot@1.2-impl.recovery \
