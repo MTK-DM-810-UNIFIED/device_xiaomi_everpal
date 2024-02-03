@@ -337,7 +337,7 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     init.sensor_2_0.rc \
     init.stnfc.rc \
-    ueventd.mtk.rc
+    ueventd.mt6833.rc
 
 PRODUCT_PACKAGES += \
     init.recovery.mt6833.rc
