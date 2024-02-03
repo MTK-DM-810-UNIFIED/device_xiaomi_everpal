@@ -68,8 +68,8 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "ueventd.mtk.rc",
+    name: "ueventd.mt6833.rc",
     filename: "ueventd.rc",
-    src: "etc/ueventd.mtk.rc",
+    src: "etc/ueventd.mt6833.rc",
     vendor: true,
 }

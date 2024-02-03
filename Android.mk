@@ -6,7 +6,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),camellia)
+ifeq ($(TARGET_DEVICE),everpal)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
 VENDOR_SYMLINKS := \

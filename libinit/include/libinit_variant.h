@@ -11,11 +11,14 @@
 #include <vector>
 
 typedef struct variant_info {
-    std::string hwc_value;
+    std::string bid_value;
     std::string sku_value;
 
     std::string brand;
     std::string device;
+    std::string name;
+    std::string manufacturer;
+    std::string marketname;
     std::string model;
     std::string build_fingerprint;
 

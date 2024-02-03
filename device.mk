@@ -120,7 +120,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.camellia
+    android.hardware.biometrics.fingerprint@2.3-service.xiaomi
 
 # FM
 PRODUCT_PACKAGES += \
@@ -299,6 +299,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.mediatek.ims.xml
 
+# Recovery
+PRODUCT_COPY_FILES += \
+    vendor/xiaomi/everpal/proprietary/vendor/firmware/novatek_ts_ct_fw.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_ts_ct_fw.bin \
+    vendor/xiaomi/everpal/proprietary/vendor/firmware/novatek_ts_ct_mp.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_ts_ct_mp.bin \
+    vendor/xiaomi/everpal/proprietary/vendor/firmware/novatek_ts_fw.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_ts_fw.bin \
+    vendor/xiaomi/everpal/proprietary/vendor/firmware/novatek_ts_mp.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_ts_mp.bin
+
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab.mt6833 \
@@ -320,13 +327,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
-    CarrierConfigOverlayCamellia \
-    FrameworksResOverlayCamellia \
-    SettingsOverlayCamellia \
-    SystemUIOverlayCamellia \
-    TelephonyOverlayCamellia \
-    TetheringConfigOverlayCamellia \
-    WifiOverlayCamellia
+    CarrierConfigOverlayEverpal \
+    FrameworksResOverlayEverpal \
+    SettingsOverlayEverpal \
+    SystemUIOverlayEverpal \
+    TelephonyOverlayEverpal \
+    TetheringConfigOverlayEverpal \
+    WifiOverlayEverpal
 
 # Secure Element
 PRODUCT_PACKAGES += \
@@ -334,7 +341,7 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@2.1-service.camellia-multihal \
+    android.hardware.sensors@2.1-service.everpal-multihal \
     android.frameworks.sensorservice@1.0.vendor \
     libsensorndkbridge
 
@@ -365,7 +372,7 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator-service.mediatek
+    android.hardware.vibrator-service.everpal
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
@@ -381,4 +388,4 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/xiaomi/camellia/camellia-vendor.mk)
+$(call inherit-product, vendor/xiaomi/everpal/everpal-vendor.mk)

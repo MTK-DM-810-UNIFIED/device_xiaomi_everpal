@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_camellia.mk
+    $(LOCAL_DIR)/lineage_everpal.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_camellia-user \
-    aosp_camellia-userdebug \
-    aosp_camellia-eng
+    lineage_everpal-user \
+    lineage_everpal-userdebug \
+    lineage_everpal-eng
