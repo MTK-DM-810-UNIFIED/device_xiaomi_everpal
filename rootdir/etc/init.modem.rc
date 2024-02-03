@@ -23,5 +23,5 @@ on early-init
 on post-fs-data
     write /proc/sys/net/ipv4/ipfrag_high_thresh 20971520
 
-# Encrypt phone function
+    # Encrypt phone function
     setprop vold.post_fs_data_done 1
