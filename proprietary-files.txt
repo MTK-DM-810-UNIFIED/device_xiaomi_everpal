@@ -655,6 +655,7 @@ vendor/firmware/lib3a.ccu
 -vendor/lib64/libvideofilter_only.so
 -vendor/lib64/libvidhance.so
 -vendor/lib64/libwa_rtdof.so
+-vendor/lib64/libwa_widelens_undistort.so
 -vendor/lib64/s5k3l6aac_mipi_raw_IdxMgr.so
 -vendor/lib64/s5k3l6aac_mipi_raw_tuning.so
 -vendor/lib64/s5k3l6qtech_mipi_raw_IdxMgr.so
