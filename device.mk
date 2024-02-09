@@ -23,6 +23,11 @@ PRODUCT_PACKAGES += \
     FrameworksResOverlayEverpal \
     SystemUIOverlayEverpal
 
+# AOSP Deskclock
+# Overlays
+PRODUCT_PACKAGES += \
+    Deskclock
+
 # Recovery
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/everpal/proprietary/vendor/firmware/novatek_ts_ct_fw.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_ts_ct_fw.bin \
