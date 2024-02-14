@@ -23,7 +23,7 @@ PRODUCT_MODEL := everpal
 
 # RisingOS flags
 RISING_CHIPSET := "MT6833P"
-RISING_MAINTAINER := "Weaponmasterjax and Jignesh2023"
+RISING_MAINTAINER := "Weaponmasterjax"
 RISING_BATTERY := 5000mah
 TARGET_CORE_GMS := true
 TARGET_ENABLE_BLUR := true
