@@ -114,3 +114,13 @@ on property:sys.tp.grip_enable=90
     write /proc/nvt_edge_reject_switch 3
 on property:sys.tp.grip_enable=270
     write /proc/nvt_edge_reject_switch 2
+
+service vendor.goodix-events /vendor/bin/init.goodix.events.sh
+    class late_start
+    user root
+    group root system input
+    disabled
+    oneshot
+
+on property:sys.boot_completed=1
+    start vendor.goodix-events
