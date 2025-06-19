@@ -4,9 +4,6 @@ import /vendor/etc/init/hw/init.mt6833.common.rc
 on init
     symlink /dev/block/platform/bootdevice /dev/block/bootdevice
 
-    # update cpus for cpuset cgroup
-    write /dev/cpuset/background/cpus 0-3
-
 # lcd feature ++ start
 on property:odm.display_hbm=0
     write /sys/class/leds/lcd-backlight/hbm 0
